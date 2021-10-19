@@ -1,0 +1,14 @@
+.section-hero {
+  display: flex;
+  max-inline-size: 100%;
+}
+
+.section-hero img {
+  max-inline-size: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-hero {
+    display: none;
+  }
+}

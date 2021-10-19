@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./container.css";
+@import "./section-hero.css";
+@import "./section-description.css";
+@import "./button.css";
+
+:root {
+  --white: #ffffff;
+  --black: #202020;
+  --primary: #1b90fc;
+  --grey: #929292;
+  --headline1: 700 40px/46.88px "Roboto";
+  --subtitle1: 700 1.625rem/1.5rem "Roboto";
+  --button: 700 14px/16px "Roboto";
+  --headline2: 700 24px/28px "Roboto";
+  --body1-regular: 400 16px/24px "Roboto";
+  --body1-bold: 700 1rem/1.5rem "Roboto";
+  --body2-bold: 700 0.875rem/1.5rem "Roboto";
+  --body2-regular: 400 14px/24px "Roboto";
+  --caption-regular: 400 0.75rem/1.5rem "Roboto";
+  --caption-bold: 700 0.75rem/1.5rem "Roboto";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  inline-size: 100vw;
+  block-size: 100vh;
+  color: var(--white);
+  background-color: var(--white);
+  font: var(--body1-regular);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    inline-size: 100vw;
+    block-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    inline-size: 100vw;
+    block-size: 100vh;
+  }
+}

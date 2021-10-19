@@ -1,0 +1,19 @@
+.button {
+  padding: 1rem;
+  border-radius: 3.125rem;
+  border: none;
+  background: var(--primary);
+  color: var(--white);
+  font: var(--button);
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 1000px) {
+  .button {
+    max-inline-size: 9.375rem;
+  }
+}

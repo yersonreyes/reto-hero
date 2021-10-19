@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  block-size: 100%;
+  background: var(--black);
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    background: url(../images/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .container .section-description {
+    order: -1;
+  }
+}
